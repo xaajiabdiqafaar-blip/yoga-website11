@@ -1,0 +1,474 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Anybody:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+     font-family: "anybody", sans-serif;
+     background-color: #dfdfd8;
+}
+
+.container{
+    width: min(90%, 1120px);
+   
+ margin-inline: auto;
+}
+
+img {
+    width: 100%;
+}
+
+header{
+    background-color: #fafaf6;
+    height: 4.5rem;
+    position: sticky;
+    width: 100%;
+    top: 0;
+
+}
+
+.desktop-menu{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.menus-link{
+    display: flex;
+    gap: 20px;
+
+}
+.menus-link li {
+
+    list-style: none;
+}
+.menus-link li a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500px;
+    color: #2b2b2b;  
+
+}
+
+.menus-link li a:hover{
+    color: #5f6ad4;
+}
+
+.desktop-menu h1 {
+    font-size: 1.5625rem;
+    font-weight: 700;
+}
+
+
+
+.hamburger{
+    display: none;
+}
+
+.mobile-menu{
+    display: none; 
+}
+
+.mobile-menu-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    
+
+}
+
+.btn-primary, .btn-secondary {
+    display: inline-block;
+    background-color: #5f6ad4;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+   
+    
+}
+
+.btn-secondary{
+    background-color: transparent;
+    border: 1px solid white;
+  
+}
+
+.hero{
+    height:calc(100vh - 4.5rem) ;
+   background: linear-gradient(rgba(0,0,0,0.5), rgba(10, 10, 10, 0.5)), url(https://images.unsplash.com/photo-1565118531796-763e5082d113?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bmF0dXJhbCUyMGltYWdlfGVufDB8fDB8fHww) center / cover no-repeat;  
+   display: flex;
+
+}
+
+.hero .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.hero h1 {
+    font-size: 5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.btn {
+    padding: 15px 16px;
+    font-size: 1.25rem;
+    background-color:#5f6ad4 ;
+    color: rgb(15, 14, 14);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
+}
+.btn:hover{
+    background-color: #fafaf6;
+}
+.yoga {
+height: 90vh;
+background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://images.unsplash.com/photo-1545389336-cf090694435e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHlvZ2ElMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D) center/ cover no-repeat;
+margin-top: 6rem;
+border-radius: 25px;
+display: flex;
+
+
+}
+
+.yoga .content {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width:  728px;
+    margin-inline: auto;
+   color: white;
+   margin-bottom: 7rem;
+
+}
+
+.yoga .content h1 {
+    font-size:3.125rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.yoga .content p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.info-boxs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:5rem;
+    margin-block: 6rem;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5625rem;
+   
+}
+
+.box img {
+    border-radius: 15px;
+}
+
+.box h1 {
+    font-size: 1.5625rem;
+    color: #2b2b2b;
+}
+
+.box p {
+    color: #646464;
+    font-size: 1.25rem;
+}
+
+.blog-boxes{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5rem;
+    margin-block: 6rem;
+    
+   
+}
+
+.blog{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5625rem;
+}
+
+.blog img {
+    border-radius: 10px;
+}
+
+.blog h2 {
+    color: rgb(43, 43, 43);
+    font-size: 1.5625rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 32px;
+}
+
+.blog p {
+    color: 
+rgb(100, 100, 100);
+    font-size: 1.25rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 26px;
+}
+
+.title1 {
+    color: rgb(43, 43, 43);
+    font-size: 3.125rem;
+    text-align: center;
+    margin-top: 60px;
+
+}
+.prefect-condition{
+    height:438px;
+    background: linear-gradient(rgba(24, 22, 22, 0.5), rgba(250, 248, 248, 0.5)), url(https://images.unsplash.com/photo-1600618528240-fb9fc964b853?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHlvZ2ElMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D) center / cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-block: 2rem ;
+    background-attachment:fixed;
+}
+
+.prefect-condition h2 {
+    color: #2a2a2a;
+    font-size: 3.125rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.prefect-condition p {
+    color: #2b2b2b;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.live img {
+   height: 500px;
+   display: flex;
+   border-radius: 10px;
+
+    }
+
+
+
+.live h2 {
+    
+ color: (43, 43, 43);
+ font-size: 3.125rem;
+ font-weight: 400;
+ line-height: 50px;
+ font-style: normal;
+ text-align: center;
+ margin: 10px;
+ 
+    
+}
+
+
+.yoga-classes {
+     height:355.188px;
+    background: linear-gradient(rgba(24, 22, 22, 0.5), rgba(250, 248, 248, 0.5)), url(https://images.unsplash.com/photo-1683056255281-e52a141924f0?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHlvZ2ElMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D) center / cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-block: 2rem ;
+    margin-block: 5rem;
+
+}
+
+.yoga-box {
+    height: 50%;
+    border-radius: 10px;
+    border: 2px solid;
+    background-color:#dfdfd8;
+    color: #2a2a2a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+footer {
+    background-color: #2a2a2a;
+    color: white;
+    font-size: 1.25rem;
+    padding: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* tablet and disktop */
+@media (max-width: 768px) {
+
+    .desktop-menu{
+        display: none;
+    }
+    header {
+        height: 0;
+    }
+    i {
+        z-index: 11111;
+    }
+    
+
+    .hamburger{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background-color: #5f6ad4;
+        color: white;
+        padding: 20px;
+       
+        top: 7%; 
+        right: 5%;
+        font-size: 2rem;
+        border-radius: 50%;
+
+    }
+
+    .mobile-menu{
+        display: flex;
+        position: fixed;
+        align-items: center;
+        background-color: #2b2b2b;
+        color: white;
+        inset: 0 0 0 0;
+        justify-content: center;
+        transform: translateX(0%);
+        transition: transform 350ms ease-in-out;
+    }
+
+    .mobile-menu[data-visible="false"]{
+        transform: translateX(100%);
+    }
+
+    .hamburger i[data-visible="true"]{
+        display: block;
+    }
+
+    .hamburger i[data-visible="false"]{
+        display: none;
+    }
+
+    .mobile-menu .navigation {
+       align-items: center;
+       
+    }
+
+    .mobile-menu .navigation .menus-link {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      
+
+    }
+
+    
+    .mobile-menu a {
+          color: white !important;
+    }
+    .mobile-menu h1 {
+        font-size: 2.3125rem;
+        font-weight: 700;
+        border-bottom: 1px solid white ;
+        padding: 10px;
+    }
+
+    .hero{
+        height: 100vh;
+    }
+    .hero h1 {
+        font-size: 3.0625rem;
+    }
+
+    .yoga .content {
+        margin-bottom: 1rem;
+    }
+
+
+    .yoga .content h1 {
+        font-size: 2.125rem;
+
+    }
+
+     .yoga .content p {
+        padding: 1rem;
+        font-size: 1.3125rem;
+        
+
+    }
+    .info-boxs {
+         grid-template-columns: 1fr ;
+    }
+
+    .prefect-condition h2 {
+    
+    font-size: 2.125rem;
+    
+}
+
+.prefect-condition p {
+    
+    font-size: 1.125rem;
+   
+}
+
+.yoga-box{
+    flex-direction: column;
+    height: 70%;
+}
+
+.yoga-box h2 {
+    font-size: 1.3125rem;
+    font-weight: 400;
+    padding:1rem;
+}
+
+.blog-boxes{
+    grid-template-columns: 1fr;
+}
+
+}
+
+
